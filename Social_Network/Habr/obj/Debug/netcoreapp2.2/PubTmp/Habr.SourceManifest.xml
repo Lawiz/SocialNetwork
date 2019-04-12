@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\User\Source\Repos\Social Newtwork\Social_Network\Habr\obj\Debug\netcoreapp2.2\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\User\Source\Repos\Social Newtwork\Social_Network\Habr\obj\Debug\netcoreapp2.2\PubTmp\EFSQLScripts\Habr.Data.ApplicationDbContext.sql" />
+</sitemanifest>

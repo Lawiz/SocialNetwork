@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Этот файл используется процессом публикации или упаковки вашего веб-проекта. Можно настроить поведение этого процесса,
+изменив этот файл MSBuild. Подробности см. на странице https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVFXG/UNeakS0AqZtNdc6ugAAAAACAAAAAAAQZgAAAAEAACAAAABUO3lbWjTXeQlr1/6Ow5bUEOc/5Fd9R3pQhujpTZGhXAAAAAAOgAAAAAIAACAAAADIQlR2Pev92cFPk18cyIZBWQ8eWCOz5HoNAhTfAn/lb4AAAADkNXkL542T7ZOLxpagrP/069ftYALck4iip+66/jdI1HiqPsVUoZ5zZ9I61f488IQCxrabqpPV2JO7sJPXYoEFHqFaU7M6gu3v6gi65HJCcSgbEcifTGM6bWq8LV9YVOIx2p36qtM6N0GMa/zsKbIElqBtPdO3piY8OwM1+JDhuEAAAADIdKod2oJUgw9BdaL7D+NXgO5eOYTmDvICx1ueiO/0z5Fi87mne0C/fM6MfXx01w5+PHeB92qarB0mMoizb+fV</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:habrdbserver.database.windows.net,1433%3bInitial Catalog=MyHabr_db%3bUser Id=petr%40habrdbserver%3bPassword=_HUIPUTALOlesnoe</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Habr.Data.ApplicationDbContext">
+      <Value>Data Source=tcp:habrdbserver.database.windows.net,1433%3bInitial Catalog=MyHabr_db%3bUser Id=petr%40habrdbserver%3bPassword=_HUIPUTALOlesnoe</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

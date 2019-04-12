@@ -1,0 +1,16 @@
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\SqlLiteMigrations\bin\Debug\netcoreapp2.2\SqlLiteMigrations.deps.json
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\SqlLiteMigrations\bin\Debug\netcoreapp2.2\SqlLiteMigrations.runtimeconfig.json
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\SqlLiteMigrations\bin\Debug\netcoreapp2.2\SqlLiteMigrations.runtimeconfig.dev.json
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\SqlLiteMigrations\bin\Debug\netcoreapp2.2\SqlLiteMigrations.dll
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\SqlLiteMigrations\obj\Debug\netcoreapp2.2\SqlLiteMigrations.csprojAssemblyReference.cache
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\SqlLiteMigrations\obj\Debug\netcoreapp2.2\SqlLiteMigrations.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\SqlLiteMigrations\obj\Debug\netcoreapp2.2\SqlLiteMigrations.AssemblyInfoInputs.cache
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\SqlLiteMigrations\obj\Debug\netcoreapp2.2\SqlLiteMigrations.AssemblyInfo.cs
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\SqlLiteMigrations\bin\Debug\netcoreapp2.2\SqlLiteMigrations.pdb
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\SqlLiteMigrations\bin\Debug\netcoreapp2.2\BLL.dll
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\SqlLiteMigrations\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\SqlLiteMigrations\bin\Debug\netcoreapp2.2\BLL.pdb
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\SqlLiteMigrations\bin\Debug\netcoreapp2.2\Microsoft.Extensions.Identity.Stores.xml
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\SqlLiteMigrations\obj\Debug\netcoreapp2.2\SqlLiteMigrations.csproj.CopyComplete
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\SqlLiteMigrations\obj\Debug\netcoreapp2.2\SqlLiteMigrations.dll
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\SqlLiteMigrations\obj\Debug\netcoreapp2.2\SqlLiteMigrations.pdb
