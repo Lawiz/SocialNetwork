@@ -28,6 +28,11 @@ namespace Habr.Controllers
             return await _context.Articles.Take(10).ToListAsync();
         }
 
+        public async Task<ActionResult<IEnumerable<Article>>> GetArticlesFrom()
+        {
+            return null;
+        }
+
         // GET: api/ArticlesApi/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Article>> GetArticle(int id)

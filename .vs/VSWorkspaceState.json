@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Social_Network"
+    "\\Social_Network",
+    "\\Social_Network\\MyHabr\\MyHabr",
+    "\\Social_Network\\MyHabr\\MyHabr\\Views"
   ],
-  "SelectedNode": "\\Social_Network\\Social_Network.sln",
   "PreviewInSolutionExplorer": false
 }
