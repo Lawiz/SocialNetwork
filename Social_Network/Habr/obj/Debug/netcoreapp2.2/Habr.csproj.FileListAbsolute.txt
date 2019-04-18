@@ -17,6 +17,11 @@ C:\Users\User\Source\Repos\Social Newtwork\Social_Network\Habr\obj\Debug\netcore
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\Habr\obj\Debug\netcoreapp2.2\Habr.TagHelpers.output.cache
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\Habr\obj\Debug\netcoreapp2.2\Habr.RazorCoreGenerate.cache
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\Habr\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\Habr\obj\Debug\netcoreapp2.2\Razor\Views\ArticlesUI\Create.g.cshtml.cs
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\Habr\obj\Debug\netcoreapp2.2\Razor\Views\ArticlesUI\Delete.g.cshtml.cs
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\Habr\obj\Debug\netcoreapp2.2\Razor\Views\ArticlesUI\Details.g.cshtml.cs
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\Habr\obj\Debug\netcoreapp2.2\Razor\Views\ArticlesUI\Edit.g.cshtml.cs
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\Habr\obj\Debug\netcoreapp2.2\Razor\Views\ArticlesUI\Index.g.cshtml.cs
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\Habr\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\Habr\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\Habr\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
@@ -32,8 +37,3 @@ C:\Users\User\Source\Repos\Social Newtwork\Social_Network\Habr\obj\Debug\netcore
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\Habr\obj\Debug\netcoreapp2.2\Habr.csproj.CopyComplete
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\Habr\obj\Debug\netcoreapp2.2\Habr.dll
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\Habr\obj\Debug\netcoreapp2.2\Habr.pdb
-C:\Users\User\Source\Repos\Social Newtwork\Social_Network\Habr\obj\Debug\netcoreapp2.2\Razor\Views\ArticlesUI\Create.g.cshtml.cs
-C:\Users\User\Source\Repos\Social Newtwork\Social_Network\Habr\obj\Debug\netcoreapp2.2\Razor\Views\ArticlesUI\Delete.g.cshtml.cs
-C:\Users\User\Source\Repos\Social Newtwork\Social_Network\Habr\obj\Debug\netcoreapp2.2\Razor\Views\ArticlesUI\Details.g.cshtml.cs
-C:\Users\User\Source\Repos\Social Newtwork\Social_Network\Habr\obj\Debug\netcoreapp2.2\Razor\Views\ArticlesUI\Edit.g.cshtml.cs
-C:\Users\User\Source\Repos\Social Newtwork\Social_Network\Habr\obj\Debug\netcoreapp2.2\Razor\Views\ArticlesUI\Index.g.cshtml.cs

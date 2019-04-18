@@ -37,7 +37,7 @@ namespace Habr.Service
                 return null;
 
             // check if password is correct
-            if (!VerifyPasswordHash(password, user.PasswordHash, user.PasswordSalt))
+            //if (!VerifyPasswordHash(password, user.PasswordHash, user.PasswordSalt))
                 return null;
 
             // authentication successful
@@ -58,16 +58,16 @@ namespace Habr.Service
         {
             // validation
             if (string.IsNullOrWhiteSpace(password))
-                throw new AppException("Password is required");
+                //throw new AppException("Password is required");
 
             if (_context.Users.Any(x => x.Username == user.Username))
-                throw new AppException("Username \"" + user.Username + "\" is already taken");
+                //throw new AppException("Username \"" + user.Username + "\" is already taken");
 
-            byte[] passwordHash, passwordSalt;
-            CreatePasswordHash(password, out passwordHash, out passwordSalt);
+            //byte[] passwordHash, passwordSalt;
+            //CreatePasswordHash(password, out passwordHash, out passwordSalt);
 
-            user.PasswordHash = passwordHash;
-            user.PasswordSalt = passwordSalt;
+            //user.PasswordHash = passwordHash;
+            //user.PasswordSalt = passwordSalt;
 
             _context.Users.Add(user);
             _context.SaveChanges();
@@ -80,13 +80,13 @@ namespace Habr.Service
             var user = _context.Users.Find(userParam.Id);
 
             if (user == null)
-                throw new AppException("User not found");
+                //throw new AppException("User not found");
 
             if (userParam.Username != user.Username)
             {
                 // username has changed so check if the new username is already taken
-                if (_context.Users.Any(x => x.Username == userParam.Username))
-                    throw new AppException("Username " + userParam.Username + " is already taken");
+                if (_context.Users.Any(x => x.Username == userParam.Username)) ;
+                //throw new AppException("Username " + userParam.Username + " is already taken");
             }
 
             // update user properties
@@ -100,7 +100,7 @@ namespace Habr.Service
                 byte[] passwordHash, passwordSalt;
                 CreatePasswordHash(password, out passwordHash, out passwordSalt);
 
-                user.PasswordHash = passwordHash;
+                //user.PasswordHash = passwordHash;
                 user.PasswordSalt = passwordSalt;
             }
 

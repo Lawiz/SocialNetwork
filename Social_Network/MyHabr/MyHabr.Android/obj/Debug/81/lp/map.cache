@@ -57,10 +57,3 @@ Xamarin.Forms.Core
 Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
-netstandard
-System.ComponentModel.Annotations
-System.Collections
-System.Linq.Queryable
-System.Diagnostics.Debug
-System.Reflection.Extensions
-System.Threading
