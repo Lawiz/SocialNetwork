@@ -1,0 +1,60 @@
+﻿@model BLL.Domain.Models.Article
+
+@{
+    ViewData["Title"] = "Create";
+}
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="~/lib/textEditro/src/richtext.min.css"/>
+
+<h2>Create</h2>
+
+<h4>Article</h4>
+<hr />
+<div class="row">
+    <form asp-action="Create">
+        <div class="col-md-4">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ArticleText" class="control-label"></label>
+                <input asp-for="ArticleText" class="form-control" />
+                <span asp-validation-for="ArticleText" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Headline" class="control-label"></label>
+                <input asp-for="Headline" class="form-control" />
+                <span asp-validation-for="Headline" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Theme" class="control-label"></label>
+                <input asp-for="Theme" class="form-control" />
+                <span asp-validation-for="Theme" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group col-md-8">
+            <label asp-for="CreaDateTime" class="control-label"></label>
+            <textarea asp-for="CreaDateTime" class="form-control content"></textarea>
+            <span asp-validation-for="CreaDateTime" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+    </form>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/textEditro/src/jquery.richtext.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.content').richText();
+        });
+
+    </script>
+}

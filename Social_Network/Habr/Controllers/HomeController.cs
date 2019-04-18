@@ -18,7 +18,7 @@ namespace Habr.Controllers
         private ApplicationDbContext context;
         public IActionResult Index()
         {
-            return View(context.Articles.ToList());
+            return View();
         }
 
         public IActionResult About()
