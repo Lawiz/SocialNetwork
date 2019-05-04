@@ -31,7 +31,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.ArticleText.Substring(0,100)+"...")
+                @Html.DisplayFor(modelItem => item.ArticleText)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Headline)
