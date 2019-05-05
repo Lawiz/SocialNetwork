@@ -14,9 +14,7 @@ namespace BLL.Domain.Models
        
         public string ArticleText { get; set; }
 
-        public string Discription {
-            get { return this.ArticleText.Substring(0, 100) + "..."; }
-        }
+        public string Discription { get; set; }
 
         public string Headline { get; set; }
 

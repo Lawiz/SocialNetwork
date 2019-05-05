@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
+      "jQuery/1.9.1": {
+        "type": "package"
+      },
+      "jQuery.jqGrid/4.4.4": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "1.9.1",
+          "jQuery.UI.Combined": "1.10.0"
+        }
+      },
+      "jQuery.UI.Combined/1.10.0": {
+        "type": "package",
+        "dependencies": {
+          "jQuery": "1.6.4"
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -4734,6 +4750,163 @@
     }
   },
   "libraries": {
+    "jQuery/1.9.1": {
+      "sha512": "HiX9icLyiJGgiL5EOIn0d1MBPHVV2M9mzWT4mANdniDNR51RvAFTyKEXEd2+5yQJ4PJ5xePOR61Vjj/omQzYcw==",
+      "type": "package",
+      "path": "jquery/1.9.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/jquery-1.9.1-vsdoc.js",
+        "Content/Scripts/jquery-1.9.1.js",
+        "Content/Scripts/jquery-1.9.1.min.js",
+        "Content/Scripts/jquery-1.9.1.min.map",
+        "Tools/common.ps1",
+        "Tools/install.ps1",
+        "Tools/jquery-1.9.1.intellisense.js",
+        "Tools/uninstall.ps1",
+        "jquery.1.9.1.nupkg.sha512",
+        "jquery.nuspec"
+      ]
+    },
+    "jQuery.jqGrid/4.4.4": {
+      "sha512": "s73xrFBi4sonGzQWJd7ZTGJCaWHechXo/JtTIMq9flS3AFVAzu7pQ7alwJ6kBHAF0OrwbPGSFGZyfj9XNYEFtg==",
+      "type": "package",
+      "path": "jquery.jqgrid/4.4.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Content/jquery.jqGrid/ellipsis-xbl.xml",
+        "Content/Content/jquery.jqGrid/ui.jqgrid.css",
+        "Content/Scripts/i18n/grid.locale-ar.js",
+        "Content/Scripts/i18n/grid.locale-bg.js",
+        "Content/Scripts/i18n/grid.locale-bg1251.js",
+        "Content/Scripts/i18n/grid.locale-cat.js",
+        "Content/Scripts/i18n/grid.locale-cn.js",
+        "Content/Scripts/i18n/grid.locale-cs.js",
+        "Content/Scripts/i18n/grid.locale-da.js",
+        "Content/Scripts/i18n/grid.locale-de.js",
+        "Content/Scripts/i18n/grid.locale-dk.js",
+        "Content/Scripts/i18n/grid.locale-el.js",
+        "Content/Scripts/i18n/grid.locale-en.js",
+        "Content/Scripts/i18n/grid.locale-es.js",
+        "Content/Scripts/i18n/grid.locale-fa.js",
+        "Content/Scripts/i18n/grid.locale-fi.js",
+        "Content/Scripts/i18n/grid.locale-fr.js",
+        "Content/Scripts/i18n/grid.locale-gl.js",
+        "Content/Scripts/i18n/grid.locale-he.js",
+        "Content/Scripts/i18n/grid.locale-hr.js",
+        "Content/Scripts/i18n/grid.locale-hr1250.js",
+        "Content/Scripts/i18n/grid.locale-hu.js",
+        "Content/Scripts/i18n/grid.locale-id.js",
+        "Content/Scripts/i18n/grid.locale-is.js",
+        "Content/Scripts/i18n/grid.locale-it.js",
+        "Content/Scripts/i18n/grid.locale-ja.js",
+        "Content/Scripts/i18n/grid.locale-kr.js",
+        "Content/Scripts/i18n/grid.locale-lt.js",
+        "Content/Scripts/i18n/grid.locale-mne.js",
+        "Content/Scripts/i18n/grid.locale-nl.js",
+        "Content/Scripts/i18n/grid.locale-no.js",
+        "Content/Scripts/i18n/grid.locale-pl.js",
+        "Content/Scripts/i18n/grid.locale-pt-br.js",
+        "Content/Scripts/i18n/grid.locale-pt.js",
+        "Content/Scripts/i18n/grid.locale-ro.js",
+        "Content/Scripts/i18n/grid.locale-ru.js",
+        "Content/Scripts/i18n/grid.locale-sk.js",
+        "Content/Scripts/i18n/grid.locale-sr-latin.js",
+        "Content/Scripts/i18n/grid.locale-sr.js",
+        "Content/Scripts/i18n/grid.locale-sv.js",
+        "Content/Scripts/i18n/grid.locale-th.js",
+        "Content/Scripts/i18n/grid.locale-tr.js",
+        "Content/Scripts/i18n/grid.locale-tw.js",
+        "Content/Scripts/i18n/grid.locale-ua.js",
+        "Content/Scripts/i18n/grid.locale-vi.js",
+        "Content/Scripts/jquery.jqGrid.js",
+        "Content/Scripts/jquery.jqGrid.min.js",
+        "jquery.jqgrid.4.4.4.nupkg.sha512",
+        "jquery.jqgrid.nuspec"
+      ]
+    },
+    "jQuery.UI.Combined/1.10.0": {
+      "sha512": "ubA0nnizWiMrokWGOx+XXVGgDsUZqNJuqkthmvR4gVBNVS2AZXUpN5A5huAyZO1aw6i1KBywa1FNskkT2FUEsw==",
+      "type": "package",
+      "path": "jquery.ui.combined/1.10.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Content/themes/base/images/animated-overlay.gif",
+        "Content/Content/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png",
+        "Content/Content/themes/base/images/ui-bg_flat_75_ffffff_40x100.png",
+        "Content/Content/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png",
+        "Content/Content/themes/base/images/ui-bg_glass_65_ffffff_1x400.png",
+        "Content/Content/themes/base/images/ui-bg_glass_75_dadada_1x400.png",
+        "Content/Content/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png",
+        "Content/Content/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png",
+        "Content/Content/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png",
+        "Content/Content/themes/base/images/ui-icons_222222_256x240.png",
+        "Content/Content/themes/base/images/ui-icons_2e83ff_256x240.png",
+        "Content/Content/themes/base/images/ui-icons_454545_256x240.png",
+        "Content/Content/themes/base/images/ui-icons_888888_256x240.png",
+        "Content/Content/themes/base/images/ui-icons_cd0a0a_256x240.png",
+        "Content/Content/themes/base/jquery-ui.css",
+        "Content/Content/themes/base/jquery.ui.accordion.css",
+        "Content/Content/themes/base/jquery.ui.all.css",
+        "Content/Content/themes/base/jquery.ui.autocomplete.css",
+        "Content/Content/themes/base/jquery.ui.base.css",
+        "Content/Content/themes/base/jquery.ui.button.css",
+        "Content/Content/themes/base/jquery.ui.core.css",
+        "Content/Content/themes/base/jquery.ui.datepicker.css",
+        "Content/Content/themes/base/jquery.ui.dialog.css",
+        "Content/Content/themes/base/jquery.ui.menu.css",
+        "Content/Content/themes/base/jquery.ui.progressbar.css",
+        "Content/Content/themes/base/jquery.ui.resizable.css",
+        "Content/Content/themes/base/jquery.ui.selectable.css",
+        "Content/Content/themes/base/jquery.ui.slider.css",
+        "Content/Content/themes/base/jquery.ui.spinner.css",
+        "Content/Content/themes/base/jquery.ui.tabs.css",
+        "Content/Content/themes/base/jquery.ui.theme.css",
+        "Content/Content/themes/base/jquery.ui.tooltip.css",
+        "Content/Content/themes/base/minified/images/animated-overlay.gif",
+        "Content/Content/themes/base/minified/images/ui-bg_flat_0_aaaaaa_40x100.png",
+        "Content/Content/themes/base/minified/images/ui-bg_flat_75_ffffff_40x100.png",
+        "Content/Content/themes/base/minified/images/ui-bg_glass_55_fbf9ee_1x400.png",
+        "Content/Content/themes/base/minified/images/ui-bg_glass_65_ffffff_1x400.png",
+        "Content/Content/themes/base/minified/images/ui-bg_glass_75_dadada_1x400.png",
+        "Content/Content/themes/base/minified/images/ui-bg_glass_75_e6e6e6_1x400.png",
+        "Content/Content/themes/base/minified/images/ui-bg_glass_95_fef1ec_1x400.png",
+        "Content/Content/themes/base/minified/images/ui-bg_highlight-soft_75_cccccc_1x100.png",
+        "Content/Content/themes/base/minified/images/ui-icons_222222_256x240.png",
+        "Content/Content/themes/base/minified/images/ui-icons_2e83ff_256x240.png",
+        "Content/Content/themes/base/minified/images/ui-icons_454545_256x240.png",
+        "Content/Content/themes/base/minified/images/ui-icons_888888_256x240.png",
+        "Content/Content/themes/base/minified/images/ui-icons_cd0a0a_256x240.png",
+        "Content/Content/themes/base/minified/jquery-ui.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.accordion.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.autocomplete.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.button.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.core.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.datepicker.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.dialog.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.menu.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.progressbar.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.resizable.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.selectable.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.slider.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.spinner.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.tabs.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.theme.min.css",
+        "Content/Content/themes/base/minified/jquery.ui.tooltip.min.css",
+        "Content/Scripts/jquery-ui-1.10.0.js",
+        "Content/Scripts/jquery-ui-1.10.0.min.js",
+        "Tools/common.ps1",
+        "Tools/install.ps1",
+        "Tools/uninstall.ps1",
+        "jquery.ui.combined.1.10.0.nupkg.sha512",
+        "jquery.ui.combined.nuspec"
+      ]
+    },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "sha512": "91JMnE9zdIDphG00qgRvl8ZwKEjqAbNlJdfXUoMiIWPfpYyH7fyCsTSj6/aynRdw/Qr/K70xC7QC6MOJ1vFBJQ==",
       "type": "package",
@@ -12963,7 +13136,8 @@
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.0",
-      "Newtonsoft.Json >= 12.0.1"
+      "Newtonsoft.Json >= 12.0.1",
+      "jQuery.jqGrid >= 4.4.4"
     ]
   },
   "packageFolders": {
@@ -13030,6 +13204,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[12.0.1, )"
+          },
+          "jQuery.jqGrid": {
+            "target": "Package",
+            "version": "[4.4.4, )"
           }
         },
         "imports": [

@@ -22,7 +22,7 @@ namespace Habr.Controllers
         // GET: ArticlesUI
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Articles.ToListAsync());
+            return View(await _context.Articles.Take(10).ToListAsync());
         }
 
         // GET: ArticlesUI/Details/5
