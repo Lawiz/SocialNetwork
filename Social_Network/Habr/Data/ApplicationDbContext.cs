@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 using BLL.Domain.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Habr.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
-    {
+    public class ApplicationDbContext : IdentityDbContext<IdentityUser>
+    {   
         public DbSet<Article> Articles { get; set; }
         public DbSet<Tag> Tags { get; set; }
-        public DbSet<User> Users { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {

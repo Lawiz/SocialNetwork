@@ -5,30 +5,31 @@
 }
 
 <h2>Index</h2>
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
 
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
+<table id="articls" class="table">
     <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.ArticleText)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Headline)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Theme)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CreaDateTime)
-            </th>
-            <th></th>
-        </tr>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ArticleText)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Headline)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Theme)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreaDateTime)
+        </th>
+        <th></th>
+    </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+    @foreach (var item in Model) {
         <tr>
             <td>
                 @string.Format("{0}...", item.ArticleText.Substring(0, 30)) 
@@ -48,6 +49,15 @@
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
-}
+    }
     </tbody>
 </table>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" defer></script>
+<link href="lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" />
+<script>
+    $(document).ready(function () {
+        $('#articls').DataTable();
+    });
+</script>

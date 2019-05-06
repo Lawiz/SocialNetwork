@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewData["Title"] = "Users";
+
+}
+@using BLL.Domain.Models
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.Extensions.DependencyModel
+@using Microsoft.VisualStudio.Web.CodeGeneration.Contracts.ProjectModel
+@model IEnumerable<IdentityUser>
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+
+
+
+    <h2>Users</h2>
+
+    <table id="users" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(s => s.Id)</th>
+                <th>@Html.DisplayNameFor(s => s.Email)</th>
+                <th>@Html.DisplayNameFor(s => s.EmailConfirmed)</th>
+                <th>@Html.DisplayNameFor(s => s.TwoFactorEnabled)</th>
+                <th>@Html.DisplayNameFor(s => s.UserName)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.Id</td>
+                    <td>@user.Email</td>
+                    <td>@user.EmailConfirmed</td>
+                    <td>@user.TwoFactorEnabled</td>
+                    <td>@user.UserName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" defer></script>
+    <link href="lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" />
+    <script>
+        $(document).ready(function () {
+            $('#users').DataTable();
+        });
+    </script>
+
