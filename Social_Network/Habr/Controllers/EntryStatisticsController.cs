@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BLL.Domain.Models;
 using Habr.Data;
+using Newtonsoft.Json;
 
 namespace Habr.Controllers
 {
@@ -102,5 +103,7 @@ namespace Habr.Controllers
         {
             return _context.EntryStatistics.Any(e => e.Id == id);
         }
+
+        
     }
 }
