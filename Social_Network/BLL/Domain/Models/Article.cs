@@ -22,10 +22,12 @@ namespace BLL.Domain.Models
 
         public DateTime CreaDateTime { get; set; }
 
-        public ICollection<Tag> Tags { get; set; }
+        public List<Tag> Tags { get; set; }
 
+        public List<ViewsStatistics> ViewsStatisticses { get; set; }
         public Article()
         {
+            this.ViewsStatisticses = new List<ViewsStatistics>();
             this.Tags = new List<Tag>();
         }
     }

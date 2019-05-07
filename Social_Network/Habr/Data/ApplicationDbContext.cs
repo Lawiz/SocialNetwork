@@ -22,5 +22,9 @@ namespace Habr.Data
         {
             base.OnModelCreating(builder);
         }
+
+        public DbSet<BLL.Domain.Models.ViewsStatistics> ViewsStatistics { get; set; }
+
+        public DbSet<BLL.Domain.Models.EntryStatistics> EntryStatistics { get; set; }
     }
 }

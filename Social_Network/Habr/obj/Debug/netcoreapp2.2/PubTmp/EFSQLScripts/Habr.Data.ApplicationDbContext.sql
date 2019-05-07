@@ -243,3 +243,39 @@ END;
 
 GO
 
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20190504181725_migrtionnam347')
+BEGIN
+    ALTER TABLE [Articles] ADD [Discription] nvarchar(max) NULL;
+END;
+
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20190504181725_migrtionnam347')
+BEGIN
+    INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+    VALUES (N'20190504181725_migrtionnam347', N'2.2.2-servicing-10034');
+END;
+
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20190506144228_migration3444')
+BEGIN
+    DECLARE @var0 sysname;
+    SELECT @var0 = [d].[name]
+    FROM [sys].[default_constraints] [d]
+    INNER JOIN [sys].[columns] [c] ON [d].[parent_column_id] = [c].[column_id] AND [d].[parent_object_id] = [c].[object_id]
+    WHERE ([d].[parent_object_id] = OBJECT_ID(N'[AspNetUsers]') AND [c].[name] = N'Discriminator');
+    IF @var0 IS NOT NULL EXEC(N'ALTER TABLE [AspNetUsers] DROP CONSTRAINT [' + @var0 + '];');
+    ALTER TABLE [AspNetUsers] DROP COLUMN [Discriminator];
+END;
+
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20190506144228_migration3444')
+BEGIN
+    INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+    VALUES (N'20190506144228_migration3444', N'2.2.2-servicing-10034');
+END;
+
+GO
+

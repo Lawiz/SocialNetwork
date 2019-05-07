@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "4e15f95d3c6df050956ee4db0644327dbafba368"
+    "signature": "157ae20fb05dc0611ca61c51dd6b46dce7c8934f"
   },
   "compilationOptions": {
     "defines": [
@@ -28,13 +28,26 @@
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.0",
-          "Newtonsoft.Json": "12.0.1"
+          "Newtonsoft.Json": "12.0.1",
+          "jQuery.jqGrid": "4.4.4"
         },
         "runtime": {
           "Habr.dll": {}
         },
         "compile": {
           "Habr.dll": {}
+        }
+      },
+      "jQuery/1.9.1": {},
+      "jQuery.jqGrid/4.4.4": {
+        "dependencies": {
+          "jQuery": "1.9.1",
+          "jQuery.UI.Combined": "1.10.0"
+        }
+      },
+      "jQuery.UI.Combined/1.10.0": {
+        "dependencies": {
+          "jQuery": "1.9.1"
         }
       },
       "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
@@ -3548,6 +3561,27 @@
       "serviceable": false,
       "sha512": ""
     },
+    "jQuery/1.9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HiX9icLyiJGgiL5EOIn0d1MBPHVV2M9mzWT4mANdniDNR51RvAFTyKEXEd2+5yQJ4PJ5xePOR61Vjj/omQzYcw==",
+      "path": "jquery/1.9.1",
+      "hashPath": "jquery.1.9.1.nupkg.sha512"
+    },
+    "jQuery.jqGrid/4.4.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-s73xrFBi4sonGzQWJd7ZTGJCaWHechXo/JtTIMq9flS3AFVAzu7pQ7alwJ6kBHAF0OrwbPGSFGZyfj9XNYEFtg==",
+      "path": "jquery.jqgrid/4.4.4",
+      "hashPath": "jquery.jqgrid.4.4.4.nupkg.sha512"
+    },
+    "jQuery.UI.Combined/1.10.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ubA0nnizWiMrokWGOx+XXVGgDsUZqNJuqkthmvR4gVBNVS2AZXUpN5A5huAyZO1aw6i1KBywa1FNskkT2FUEsw==",
+      "path": "jquery.ui.combined/1.10.0",
+      "hashPath": "jquery.ui.combined.1.10.0.nupkg.sha512"
+    },
     "Microsoft.CodeAnalysis.CSharp.Workspaces/2.8.0": {
       "type": "package",
       "serviceable": true,
@@ -4900,7 +4934,7 @@
     "Remotion.Linq/2.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-twDAH8dAXXCAf3sRv1Tf94u66eEHvgU75hfn1nn2v4fSWXD50XoDOAk8WpSrbViNuMkB4kN1ElnOGm1c519IHg==",
+      "sha512": "sha512-fK/76UmpC0FXBlGDFVPLJHQlDLYnGC+XY3eoDgCgbtrhi0vzbXDQ3n/IYHhqSKqXQfGw/u04A1drWs7rFVkRjw==",
       "path": "remotion.linq/2.2.0",
       "hashPath": "remotion.linq.2.2.0.nupkg.sha512"
     },
