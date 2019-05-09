@@ -279,3 +279,50 @@ END;
 
 GO
 
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20190506173021_migration3445')
+BEGIN
+    CREATE TABLE [ViewsStatistics] (
+        [Id] int NOT NULL IDENTITY,
+        [DateTime] datetime2 NOT NULL,
+        [ArticleId] int NOT NULL,
+        CONSTRAINT [PK_ViewsStatistics] PRIMARY KEY ([Id]),
+        CONSTRAINT [FK_ViewsStatistics_Articles_ArticleId] FOREIGN KEY ([ArticleId]) REFERENCES [Articles] ([Id]) ON DELETE CASCADE
+    );
+END;
+
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20190506173021_migration3445')
+BEGIN
+    CREATE INDEX [IX_ViewsStatistics_ArticleId] ON [ViewsStatistics] ([ArticleId]);
+END;
+
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20190506173021_migration3445')
+BEGIN
+    INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+    VALUES (N'20190506173021_migration3445', N'2.2.2-servicing-10034');
+END;
+
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20190507154257_migraion3489')
+BEGIN
+    CREATE TABLE [EntryStatistics] (
+        [Id] int NOT NULL IDENTITY,
+        [EntryDate] datetime2 NOT NULL,
+        CONSTRAINT [PK_EntryStatistics] PRIMARY KEY ([Id])
+    );
+END;
+
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20190507154257_migraion3489')
+BEGIN
+    INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+    VALUES (N'20190507154257_migraion3489', N'2.2.2-servicing-10034');
+END;
+
+GO
+

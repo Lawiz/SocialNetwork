@@ -83,26 +83,42 @@ namespace Habr.Controllers
         private dynamic GetEntryStatistics()
         {
             var response = new List<int>();
+            context.Database.SetCommandTimeout(100);
             response.Add(context.EntryStatistics.AsNoTracking().Where(s => s.EntryDate.Hour > 0 && s.EntryDate.Hour < 3).Count());
+            context.Database.SetCommandTimeout(100);
             response.Add(context.EntryStatistics.AsNoTracking().Where(s => s.EntryDate.Hour > 3 && s.EntryDate.Hour < 6).Count());
+            context.Database.SetCommandTimeout(100);
             response.Add(context.EntryStatistics.AsNoTracking().Where(s => s.EntryDate.Hour > 6 && s.EntryDate.Hour < 9).Count());
+            context.Database.SetCommandTimeout(100);
             response.Add(context.EntryStatistics.AsNoTracking().Where(s => s.EntryDate.Hour > 9 && s.EntryDate.Hour < 12).Count());
+            context.Database.SetCommandTimeout(100);
             response.Add(context.EntryStatistics.AsNoTracking().Where(s => s.EntryDate.Hour > 12 && s.EntryDate.Hour < 15).Count());
+            context.Database.SetCommandTimeout(100);
             response.Add(context.EntryStatistics.AsNoTracking().Where(s => s.EntryDate.Hour > 15 && s.EntryDate.Hour < 18).Count());
+            context.Database.SetCommandTimeout(100);
             response.Add(context.EntryStatistics.AsNoTracking().Where(s => s.EntryDate.Hour > 18 && s.EntryDate.Hour < 21).Count());
+            context.Database.SetCommandTimeout(100);
             response.Add(context.EntryStatistics.AsNoTracking().Where(s => s.EntryDate.Hour > 21 && s.EntryDate.Hour < 0).Count());
             return JsonConvert.SerializeObject(response);
         }
         private dynamic GetViewStatistics()
         {
             var response = new List<int>();
+            context.Database.SetCommandTimeout(100);
             response.Add(context.ViewsStatistics.AsNoTracking().Where(s => s.DateTime.Hour > 0 && s.DateTime.Hour < 3).Count());
+            context.Database.SetCommandTimeout(100);
             response.Add(context.ViewsStatistics.AsNoTracking().Where(s => s.DateTime.Hour > 3 && s.DateTime.Hour < 6).Count());
+            context.Database.SetCommandTimeout(100);
             response.Add(context.ViewsStatistics.AsNoTracking().Where(s => s.DateTime.Hour > 6 && s.DateTime.Hour < 9).Count());
+            context.Database.SetCommandTimeout(100);
             response.Add(context.ViewsStatistics.AsNoTracking().Where(s => s.DateTime.Hour > 9 && s.DateTime.Hour < 12).Count());
+            context.Database.SetCommandTimeout(100);
             response.Add(context.ViewsStatistics.AsNoTracking().Where(s => s.DateTime.Hour > 12 && s.DateTime.Hour < 15).Count());
+            context.Database.SetCommandTimeout(100);
             response.Add(context.ViewsStatistics.AsNoTracking().Where(s => s.DateTime.Hour > 15 && s.DateTime.Hour < 18).Count());
+            context.Database.SetCommandTimeout(100);
             response.Add(context.ViewsStatistics.AsNoTracking().Where(s => s.DateTime.Hour > 18 && s.DateTime.Hour < 21).Count());
+            context.Database.SetCommandTimeout(100);
             response.Add(context.ViewsStatistics.AsNoTracking().Where(s => s.DateTime.Hour > 21 && s.DateTime.Hour < 0).Count());
             return JsonConvert.SerializeObject(response);
         }

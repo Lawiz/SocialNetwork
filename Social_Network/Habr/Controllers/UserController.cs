@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web.Http;
 using BLL.Domain.Models;
 using Habr.Data;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -21,5 +21,6 @@ namespace Habr.Controllers
         {
             return View(await context.Users.ToListAsync());
         }
+       
     }
 }

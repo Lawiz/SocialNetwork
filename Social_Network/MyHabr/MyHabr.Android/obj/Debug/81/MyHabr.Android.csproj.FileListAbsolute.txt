@@ -113,3 +113,6 @@ C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr.Android\
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr.Android\obj\Debug\81\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.Android.pdb
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.pdb
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\bin\Debug\netstandard2.0\MyHabr.dll
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr.Android\bin\Debug\MyHabr.dll.mdb
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr.Android\obj\Debug\81\linksrc\MyHabr.dll.mdb

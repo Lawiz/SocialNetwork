@@ -14,11 +14,15 @@ namespace MyHabr.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\LoginPage.xaml")]
-    public partial class LoginPage : global::Xamarin.Forms.ContentView {
+    public partial class LoginPage : global::Xamarin.Forms.MasterDetailPage {
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::MyHabr.Views.LoginPageMaster MasterPage;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(LoginPage));
+            MasterPage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::MyHabr.Views.LoginPageMaster>(this, "MasterPage");
         }
     }
 }

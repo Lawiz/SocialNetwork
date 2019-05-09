@@ -15,6 +15,10 @@ namespace MyHabr
     public partial class App : Application
     {
         private static IStoryService<Article> _restService;
+        private static readonly FormsNavigationService _navigationService =
+            new FormsNavigationService();
+        public static INavigationService NavigationService { get; } = _navigationService;
+
 
         public static void Initialize()
         {
@@ -28,6 +32,8 @@ namespace MyHabr
         }
 
         private Database db;
+        public static bool IsUserLoggedIn { get; set; }
+
         protected async override void OnStart()
         {
         //    db = new Database(Constants.ConnectionString);

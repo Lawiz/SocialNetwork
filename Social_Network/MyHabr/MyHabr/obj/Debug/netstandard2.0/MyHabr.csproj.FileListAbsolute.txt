@@ -16,3 +16,4 @@ C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\obj\Debu
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\obj\Debug\netstandard2.0\MyHabr.dll
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\obj\Debug\netstandard2.0\MyHabr.pdb
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\obj\Debug\netstandard2.0\MyHabr.csprojAssemblyReference.cache
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\obj\Debug\netstandard2.0\Views\Login.xaml.g.cs
