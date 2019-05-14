@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Linq;
 using System.Threading.Tasks;
 using MyHabr.Data;
 using Xamarin.Forms;
@@ -41,7 +42,7 @@ namespace MyHabr.ViewModels
             {
                 Items.Clear();
                 //var items = DataStore.GetItemsAsync(true).Result;
-                var items = db.GetItemsAsync().Result;
+                var items = db.GetItemsAsync().Result.OrderByDescending(o=>o.CreaDateTime);
                 foreach (var item in items)
                 {
                     Items.Add(item);

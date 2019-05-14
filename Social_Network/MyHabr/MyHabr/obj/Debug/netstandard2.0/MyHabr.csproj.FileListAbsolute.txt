@@ -2,10 +2,12 @@ C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\bin\Debu
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\bin\Debug\netstandard2.0\MyHabr.deps.json
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\bin\Debug\netstandard2.0\MyHabr.dll
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\bin\Debug\netstandard2.0\MyHabr.pdb
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\obj\Debug\netstandard2.0\MyHabr.csprojAssemblyReference.cache
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
+C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\obj\Debug\netstandard2.0\Views\Login.xaml.g.cs
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\obj\Debug\netstandard2.0\Views\MenuPage.xaml.g.cs
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
@@ -15,5 +17,3 @@ C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\obj\Debu
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\obj\Debug\netstandard2.0\MyHabr.dll
 C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\obj\Debug\netstandard2.0\MyHabr.pdb
-C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\obj\Debug\netstandard2.0\MyHabr.csprojAssemblyReference.cache
-C:\Users\User\Source\Repos\Social Newtwork\Social_Network\MyHabr\MyHabr\obj\Debug\netstandard2.0\Views\Login.xaml.g.cs

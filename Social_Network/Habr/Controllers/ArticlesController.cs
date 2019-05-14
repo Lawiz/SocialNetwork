@@ -23,9 +23,12 @@ namespace Habr.Controllers
 
         // GET: api/ArticlesApi
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Article>>> GetArticles()
+        public async Task<ActionResult<IEnumerable<Article>>> GetArticles([FromQuery] DateTime dateTimeFrom)
         {
-            return await _context.Articles.Take(10).ToListAsync();
+            DbFunctions dbsc = null;
+            return await _context.Articles
+                .Where(w => SqlServerDbFunctionsExtensions.DateDiffMinute(dbsc,w.CreaDateTime,Convert.ToDateTime(dateTimeFrom))>1)
+                .ToListAsync();
         }
 
         // GET: api/ArticlesApi/5

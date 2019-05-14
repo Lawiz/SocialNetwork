@@ -36,15 +36,15 @@ namespace MyHabr
 
         protected async override void OnStart()
         {
-        //    db = new Database(Constants.ConnectionString);
-        //    _restService = DependencyService.Get<IStoryService<Article>>();
+            db = new Database(Constants.ConnectionString);
+            _restService = DependencyService.Get<IStoryService<Article>>();
 
-        //    var articles = await _restService.GetAll();
-            
-        //    var i = db.database.InsertAllAsync(articles).Result;
-            
+            var articles = await _restService.GetAll();
 
-        //    var result = db.GetItemsAsync().Result;
+            var i = db.database.InsertAllAsync(articles).Result;
+
+
+            var result = db.GetItemsAsync().Result;
         }
 
         protected override void OnSleep()

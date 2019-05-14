@@ -19,6 +19,11 @@ namespace MyHabr.Views
             InitializeComponent();
 
             BindingContext = this.viewModel = viewModel;
+            WebView webView = new WebView();
+            var htmlSource = new HtmlWebViewSource();
+            htmlSource.Html = this.viewModel.Item.ArticleText;
+            webView.Source = htmlSource;
+            this.Content = webView;
         }
 
         public ItemDetailPage()

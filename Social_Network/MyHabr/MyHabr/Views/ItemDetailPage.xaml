@@ -3,8 +3,5 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyHabr.Views.ItemDetailPage"
              Title="{Binding Title}">
-    <StackLayout Spacing="20" Padding="15">
-        <Label Text="{Binding Item.Description}" FontSize="Small"/>
-        <WebView Source="{Binding Item.ArticleText}" />
-    </StackLayout>
+    
 </ContentPage>

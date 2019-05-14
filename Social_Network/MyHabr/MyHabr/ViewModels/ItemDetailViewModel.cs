@@ -2,6 +2,7 @@
 
 using MyHabr.Models;
 using MyHabr.Models.BLL.Domain.Models;
+using Xamarin.Forms;
 
 namespace MyHabr.ViewModels
 {
@@ -12,6 +13,7 @@ namespace MyHabr.ViewModels
         {
             Title = item?.Headline;
             Item = item;
+            
         }
     }
 }

@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
+using MyHabr.Data;
 using MyHabr.Models.BLL.Domain.Models;
 using Newtonsoft.Json;
 
@@ -56,7 +58,23 @@ namespace MyHabr.Services
 
         public async Task<IEnumerable<Article>> GetAll()
         {
-            var result = InvokeGetApi<IEnumerable<Article>>("api/Articles").Result;
+            DateTime maxDate;
+            var db = new Database(Constants.ConnectionString);
+            try
+            {
+                maxDate = db.database.Table<Article>().ToListAsync().Result.Max(s => s.CreaDateTime);
+                //.QueryAsync<DateTime>($"select CreaDateTime from [Article]").Result
+                //.FirstOrDefault();
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+
+            var TESTsTRING = $"api/Articles?dateTimeFrom={maxDate}";
+            var result = InvokeGetApi<IEnumerable<Article>>($"api/Articles?dateTimeFrom={maxDate}").Result;
             return result;
         }
 
